@@ -7,14 +7,15 @@ public class Battleships {
     private final Player[] players = new Player[2];
     private final BattleField[] battleFields = new BattleField[2];
 
-    public void start() {
+	 public void start() {
         System.out.print("\n====================== BATTLESHIPS ======================\n");
         System.out.print("\nPlayer 1\n\t-> Please enter your name: ");
         players[0] = new Player(inp.nextLine());
         System.out.print("\nPlayer 2\n\t-> Please enter your name: ");
         players[1] = new Player(inp.nextLine());
+    //    battleFields[0].fillTheField();
 
-    } /* END OF start */
+    }
 
     public Token getToken() {
         return token;
